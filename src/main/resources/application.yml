@@ -1,0 +1,26 @@
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+  datasource:
+    url: jdbc:h2:mem:myexpenses-db
+    username: root
+    password: 123456
+    driver-class-name: org.h2.Driver
+  #  flyway:
+  #    enabled: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#flyway:
+#  url: *dbURL
+#  user: *dbUser
+#  password: *dbPassword
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include=health,info,metrics,prometheus:
