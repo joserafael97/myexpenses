@@ -37,7 +37,7 @@ dependencies {
 	//metrics
 	runtimeOnly("io.micrometer:micrometer-registry-prometheus")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
-	
+
 
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
